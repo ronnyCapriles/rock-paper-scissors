@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+
+// falta pulir codigo
+
+
+html{
+      height: 100%;
+     
+}
+body{
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)) no-repeat fixed ;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      overflow: hidden;
+}
+
+#container{
+      width: 100%;
+      height: 100%; 
+}
+
+.container-main{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
+}
+
+.main-game{
+
+      width: 90%;
+      height: 90%;
+      flex-flow: column;
+}
+
+.main-images{
+      width: 25%;
+      img{
+            width: 100%;
+      }
+}
+
+.score{
+      
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 55%;
+      margin-top: 25px;
+      border: 3px solid hsl(217, 16%, 45%);
+      border-radius: 10px;
+      padding: 20px;
+
+
+}
+
+.score-counter{
+
+      height: 100px;
+      width: 120px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 10px;
+      
+     
+}
+
+.counter-number{
+
+      font-size: 300%;
+      font-weight: 900;
+      color: hsl(229, 25%, 31%);
+      
+}
+
+.rules-tittle{
+      font-size: 200%;
+      font-weight: 900;
+      color: hsl(229, 25%, 31%);
+      margin-bottom: 30px;
+}
+
+.counter-tittle{
+
+      color: hsl(229, 64%, 46%);
+      letter-spacing: 2px;
+}
+
+.original{
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-between;   
+}
+
+.original-box{
+      width: 450px;
+      height: 70%;
+}
+
+.original-box_row{
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+
+}
+.original-bg{
+      position: absolute;
+      width: 450px;
+      height: 388px;
+ 
+     
+}
+
+.outside-bg{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      img{
+            margin-top: 50px;
+      }
+}
+
+.original-ctn{
+
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+}
+
+.ctn-choose{
+      width: 100%;
+      display:flex;
+      flex-flow: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+.ctn-choose_small{
+      width: 70%;
+}
+
+.ctn-choose_m0{
+      margin-top: -20px;
+      margin-bottom: 20px;
+}
+
+
+.original-button{
+
+      width: 141px;
+      height: 141px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      padding-bottom: 15px;
+      border-radius: 100%;
+      z-index: 2;
+          
+      
+}
+
+
+.button-bg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 81px;
+      height: 81px;
+      background-color: rgb(223, 223, 223);
+      border-radius: 100%;
+      padding: 30px;
+      padding-top: 25px;
+      border-top: 6px solid  rgb(194, 194, 194) ;
+      z-index: 2;
+      img{
+            width: 80%;
+      }
+}
+
+.button-bg_xl{
+      width: 131px;
+      height: 131px;
+      border-top: 8px solid  rgb(194, 194, 194);
+}
+.original-button_xl{
+      width: 216px;
+      height: 216px;
+      margin: 0 25px;
+      
+}
+
+.original-button_bonus{
+      width: 101px;
+      height: 101px;
+}
+
+.button-bg_bonus{
+      width: 41px;
+      height: 41px;
+      img{
+            width: 100%;
+      }
+}
+
+.original-button_animated{
+      animation: faded 1s ease-in;  
+}
+
+.original-button_scissors{
+      background: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
+      border-bottom: 8px solid hsl(39, 100%, 37%) ;
+      
+}
+.original-button_paper{
+      background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+      border-bottom: 8px solid hsl(230, 56%, 42%) ;
+}
+.original-button_rock{
+      background: linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));
+      border-bottom: 8px solid hsl(349, 65%, 42%) ;
+}
+.original-button_lizard{
+      background: linear-gradient(hsl(261, 73%, 60%),hsl(261, 72%, 63%));
+      border-bottom: 8px solid hsl(261, 74%, 53%), ;
+}
+.original-button_spock{
+      background: linear-gradient(hsl(189, 59%, 53%) , hsl(189, 58%, 57%));
+      border-bottom: 8px solid hsl(189, 74%, 38%)  ;
+}
+
+
+
+
+.rules{
+     
+      width: 97%;
+      display: flex;
+      justify-content: flex-end;
+     
+}
+
+.rules-outside{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.479);
+      z-index: 3;
+}
+
+.rules-inside{
+
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+     
+}
+
+.rules-ctn{
+      position: relative;
+      background-color: white;
+      border-radius: 5px;  
+      padding: 30px; 
+}
+
+
+.rules-close{
+      position: absolute;
+      top: 10%;
+      right: 7%;
+}
+
+.btn{
+      outline-style: none;
+      background-color: initial;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 35px;
+}
+
+.btn_xl{
+      height: 60px;
+      width: 80%;
+      font-size: 150%;
+}
+
+.btn_play{
+      background-color:white;
+      color: red;
+      font-weight: 700;
+      width: 90%;
+
+}
+
+.transition-ctn{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      
+}
+
+.transition-ctn_center{
+      justify-content: center;
+      animation: faded 3s ease-in;
+}
+
+.trn-tittle{
+      color: white;
+      font-size: 150%;
+      margin-bottom: 120px;
+}
+
+.trn-tittle_xl{
+      font-size: 300%;
+      margin-bottom: 10px;
+      margin-left: 25px;
+      margin-right: 25px;
+}
+
+.wait-content{
+      width: 206px;
+      height: 206px;
+      margin-top: 20px;
+      margin-left: 25px;
+      background-color: black;
+      opacity: 0.2;
+      border-radius: 100%;
+      animation: wait-animation 2s infinite;
+      
+}
+
+@keyframes wait-animation{
+      0%{
+            width: 206px;
+            height: 206px;
+            margin-top: 20px;
+            margin-left: 25px;
+      }
+      50%{
+            width: 0px;
+            height: 0px;
+            margin-top: 123px;
+            margin-left: 128px;
+            margin-right: 103px;
+            margin-bottom: 103px;
+      }
+      100%{
+            width: 206px;
+            height: 206px; 
+            margin-top: 20px;
+            margin-left: 25px;
+      }
+}
+
+
+@keyframes faded{
+      0%{
+            opacity: 0;
+      }
+      100%{
+            opacity: 1;
+      }
+}
+
+
+
+@media screen and (max-device-width: 850px){
+      .transition-ctn_center{
+            position: absolute;
+            left: 13%;
+            right: 50%;
+            bottom: 10%;
+            width: 80%;
+      }
+
+      .trn-tittle{
+            color: white;
+            font-size: 150%;
+            margin-bottom: 70px;
+      }
+
+      .trn-tittle_xl{
+            font-size: 300%;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+      }
+
+      .transition-ctn {
+
+            .original-button{
+      
+            width: 131px;
+            height: 131px;
+            padding: 15px;
+            border-radius: 100%;
+            z-index: 2;
+            
+            }
+      
+            .button-bg{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 71px;
+                  height: 71px;
+                  background-color: rgb(223, 223, 223);
+                  border-radius: 100%;
+                  padding: 30px;
+                  padding-top: 25px;
+                  border-top: 6px solid  rgb(194, 194, 194) ;
+                  z-index: 2;
+                  img{
+                        width: 80%;
+                        }
+                  
+                  }
+            }
+
+            .wait-content{
+                  width: 126px;
+                  height: 126px;
+                  margin-top: 20px;
+                  margin-left: 25px;
+                  background-color: black;
+                  opacity: 0.2;
+                  border-radius: 100%;
+                  animation: wait-animation_small 2s infinite;
+            }
+            
+            @keyframes wait-animation_small{
+                  0%{
+                        width: 126px;
+                        height: 126px;
+                        margin-top: 20px;
+                        margin-left: 25px;
+                  }
+                  50%{
+                        width: 0px;
+                        height: 0px;
+                        margin-top: 63px;
+                        margin-left: 63px;
+                        margin-right: 63px;
+                        margin-bottom: 63px;
+                  }
+                  100%{
+                        width: 126px;
+                        height: 126px; 
+                        margin-top: 20px;
+                        margin-left: 25px;
+                  }
+            
+            }
+           
+}
+
+
+@media screen and (max-device-width: 450px)  {
+
+      .container-main{
+            width: 100%;
+            height: 100%;
+      }
+      .main-images{
+            width: 60%;
+            img{
+                  width: 100%;
+            }
+      }
+
+      .score{
+
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            min-width: fit-content;
+            margin: 35px 10px;
+            margin-bottom: 60px;
+            border: 3px solid hsl(217, 16%, 45%);
+            border-radius: 10px;
+            padding: 10px;
+            padding-left: 20px;
+      }
+      .score-tittle{
+            img{
+                  width: 55%;
+            }
+      }
+
+      .score-counter{
+
+            height: 80px;
+            width: 85px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 5px;
+            
+           
+      }
+
+      .counter-number{
+
+            font-size: 200%;
+            font-weight: 900;
+            color: hsl(229, 25%, 31%);
+            
+      }
+
+      .counter-tittle{
+
+            color: hsl(229, 64%, 46%);
+            font-size: 60%;
+      }
+      
+
+      .ctn-choose{
+            width: 100%;
+            display:flex;
+            flex-flow: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+      }
+      .ctn-choose_small{
+            width: 70%;
+      }
+
+      .ctn-choose_m0{
+            margin-top: -20px;
+            margin-bottom: 20px;
+      }
+
+      .main-game{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .original{
+            width: 90%;      
+      }
+
+      .original-box{
+          
+            width: 100%;
+      
+      }
+      .original-bg{
+            position: absolute;
+            width: 100%;
+            height: 290px;
+            
+           
+           
+      }
+
+      .outside-bg{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+           
+            width: 80%;
+            height: 250px;
+      
+            img{
+                  margin-top: 100px;
+                  width: 100%;
+                  height: 100%;
+            }
+      }
+
+      .original-button{
+      
+            width: 101px;
+            height: 101px;
+            padding: 15px;
+            padding-bottom: 15px;
+            border-radius: 100%;
+            z-index: 2;
+            
+      }
+      
+      .button-bg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 41px;
+            height: 41px;
+            background-color: rgb(223, 223, 223);
+            border-radius: 100%;
+            padding: 30px;
+            padding-top: 25px;
+            border-top: 6px solid  rgb(194, 194, 194) ;
+            z-index: 2;
+            img{
+                  width: 50px;
+            }
+            
+      }
+
+      .button-bg_xl{
+            width: 51px;
+            height: 51px;
+            border-top: 8px solid  rgb(194, 194, 194);
+      }
+      .original-button_xl{
+            width: 111px;
+            height: 111px;
+            margin: 0 10px;
+      
+      }
+
+      .original-button_bonus{
+            width: 81px;
+            height: 81px;
+      }
+      
+      .button-bg_bonus{
+            width: 21px;
+            height: 21px;
+            img{
+                  width: 150%;
+            }
+      }
+      .rules{
+     
+            width: 100%;
+            display: flex;
+            justify-content: center;
+           
+      }
+
+      .rules-ctn{
+            background-color: white;  
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+      }
+
+      .rules-close{
+            position: relative;
+            margin-left: 50px;
+            margin-bottom: 100px;
+      }
+
+      .trn-tittle{
+            margin-bottom: 20px;
+            font-size: 100%;
+      }
+
+      .trn-tittle_xl{
+            font-size: 300%;
+      }
+
+      .wait-content{
+            width: 106px;
+            height: 106px;
+            margin-top: 20px;
+            margin-left: 10px;
+            background-color: black;
+            opacity: 0.2;
+            border-radius: 100%;
+            animation: wait-animation_small 2s infinite;
+      }
+     
+      
+      @keyframes wait-animation_small{
+            0%{
+                  width: 106px;
+                  height: 106px;
+                  margin-top: 20px;
+                  margin-left: 10px;
+            }
+            50%{
+                  width: 0px;
+                  height: 0px;
+                  margin-top: 73px;
+                  margin-left: 53px;
+                  margin-right: 53px;
+                  margin-bottom: 53px;
+            }
+            100%{
+                  width: 106px;
+                  height: 106px; 
+                  margin-top: 20px;
+                  margin-left: 10px;
+            }
+      
+      }
+
+      
+}
